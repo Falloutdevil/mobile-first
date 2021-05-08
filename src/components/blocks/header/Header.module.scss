@@ -13,19 +13,20 @@
       justify-content: space-between;
       align-items: center;
       height: 60px;
-      @media screen and (min-width: 768px) {
+      @include media(sm) {
         height: 100px;
       }
 
       .wrapper {
         display: flex;
+        margin-top: 3px;
 
         .logo {
           margin-right: 45px;
-          @media screen and (min-width: 576px) {
+          @include media (xs) {
             margin-right: 36px;
           }
-          @media screen and (min-width: 768px) {
+          @include media (sm) {
             height: 23px;
           }
         }
@@ -33,14 +34,14 @@
         .phoneMoscow {
           color: $linkColor;
           @include text(14px, 400, 17px);
-          @media screen and (min-width: 576px) {
+          @include media (xs) {
             display: none;
           }
         }
 
         .phone {
           display: none;
-          @media screen and (min-width: 576px) {
+          @include media (xs) {
             display: block;
           }
 
@@ -58,7 +59,10 @@
         }
       }
       .user {
-        @media screen and (min-width: 1280px) {
+        .userImg {
+          margin-left: 86px;
+        }
+        @include media (md) {
           display: none;
         }
       }
