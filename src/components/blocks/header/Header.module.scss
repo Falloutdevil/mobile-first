@@ -1,2 +1,69 @@
+@import "./../../../styles/sass/vars";
+@import "./../../../styles/sass/mixins";
+
+
+.header {
+  background-color: $primaryColor;
+
+  .container {
+    @extend %container;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      @media screen and (min-width: 768px) {
+        height: 100px;
+      }
+
+      .wrapper {
+        display: flex;
+
+        .logo {
+          margin-right: 45px;
+          @media screen and (min-width: 576px) {
+            margin-right: 36px;
+          }
+          @media screen and (min-width: 768px) {
+            height: 23px;
+          }
+        }
+
+        .phoneMoscow {
+          color: $linkColor;
+          @include text(14px, 400, 17px);
+          @media screen and (min-width: 576px) {
+            display: none;
+          }
+        }
+
+        .phone {
+          display: none;
+          @media screen and (min-width: 576px) {
+            display: block;
+          }
+
+          span, .phoneLink {
+            @include text(14px, 400, 17px);
+          }
+
+          span {
+            color: $textColorLight;
+          }
+
+          .phoneLink {
+            color: $textColor;
+          }
+        }
+      }
+      .user {
+        @media screen and (min-width: 1280px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 
