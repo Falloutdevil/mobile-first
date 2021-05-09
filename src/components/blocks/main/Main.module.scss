@@ -2,66 +2,108 @@
 @import './../../../styles/sass/mixins.scss';
 
 .main {
-    background-image: url("./../../../assets/img/main-bg.jpg");
-    background-size: cover;
-    background-position: 62% center;
-    color: $primaryColor;
-    .container {
-        @extend %container;
-        .inner {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 655px;
-            @include media (sm) {
-                height: 840px;
-            }
-            .title{
-                @include text(32px, 700, 39px); 
-                max-width: 247px;
-                margin-top: -5px;
-                span {
-                    color: $accentColor;
-                }
-                @include media (sm) {
-                    max-width: 596px;
-                    font-size: 40px;
-                    line-height: 49px;
-                }
-                @include media (md) {
-                    max-width: 887px;
-                    width: 100%;
-                }
-            }
-            .priceBox {
-                height: 93px;
-                width: 208px;
-                background-image: url(./../../../assets/img/price-box.svg);
-                background-repeat: no-repeat;
-                margin: 36px 0 14px -5px;
-                display: flex;
-                justify-content: space-around;
-                padding: 6px 15px;
-
-                .wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    .priceLabel{
-                        @include text(18px, 400, inherit);
-                    }
-                    .price {
-                        @include text(30px, 800, 38px);
-
-                    }
-                }
-                .percent {
-                    border-radius: 50%;
-                    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
-                    max-height: 47px;
-                    margin-top: 10px;
-                    transform: translateX(4px);
-                }
-            }
-        }
+  background-image: url("./../../../assets/img/main-bg.jpg");
+  background-size: cover;
+  background-position: 62% center;
+  color: $primaryColor;
+    @include media(sm) {
+        background-position: 56% center;
+        background-size: 233% auto;
     }
+    @include media(md) {
+        background-position: 50% center;
+        background-size: 141% auto;
+    }
+
+
+  .container {
+    @extend %container;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 655px;
+      @include media(sm) {
+        height: 840px;
+      }
+
+      .title {
+        @include text(32px, 700, 39px);
+        max-width: 247px;
+        margin-top: -14px;
+        @include media(xs) {
+          margin-top: 4px;
+        }
+        @include media(sm) {
+          max-width: 596px;
+          font-size: 40px;
+          line-height: 49px;
+          margin-top: 41px;
+        }
+        @include media(md) {
+          max-width: 887px;
+          width: 100%;
+        }
+
+        span {
+          color: $accentColor;
+        }
+      }
+
+      .priceBox {
+        height: 86px;
+        width: 205px;
+        background-image: url(./../../../assets/img/price-box.svg);
+        background-repeat: no-repeat;
+        margin: 36px 0 14px -5px;
+        display: flex;
+        justify-content: space-around;
+        padding: 6px 15px;
+        @include media(xs) {
+          transform: translateY(2px);
+        }
+        @include media(sm) {
+          width: 233px;
+          height: 96px;
+          background-size: cover;
+          transform: translate(0px, -14px);
+        }
+
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .priceLabel {
+            @include text(18px, 400, 28px);
+            @include media(sm) {
+              @include text(20px, 400, 31px);
+
+            }
+          }
+
+          .price {
+            @include text(30px, 800, 45px);
+            transform: translate(1px, -8px);
+            @include media(sm) {
+              @include text(35px, 800, 52px);
+
+            }
+          }
+        }
+
+        .percent {
+          border-radius: 50%;
+          filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+          max-height: 47px;
+          transform: translate(6px, 10px);
+          @include media(sm) {
+            transform: translate(-11px, 9px);
+            max-height: 52px;
+          }
+        }
+      }
+    }
+  }
 }

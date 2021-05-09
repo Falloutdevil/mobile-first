@@ -1,6 +1,6 @@
 import s from './Header.module.scss';
-import logo from './../../../assets/img/logo.svg';
-import userIcon from './../../../assets/img/user.png'
+import logo from '../../../assets/img/logo.svg';
+import userIcon from '../../../assets/img/user.png'
 
 
 function Header() {

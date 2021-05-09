@@ -1,5 +1,5 @@
-@import "./../../../styles/sass/vars";
-@import "./../../../styles/sass/mixins";
+@import "../../../styles/sass/vars";
+@import "../../../styles/sass/mixins";
 
 
 .header {
@@ -27,7 +27,7 @@
             margin-right: 36px;
           }
           @include media (sm) {
-            height: 23px;
+            width: 129px;
           }
         }
 
@@ -43,6 +43,9 @@
           display: none;
           @include media (xs) {
             display: block;
+          }
+          @include media (sm) {
+            transform: translate(0, 4px);
           }
 
           span, .phoneLink {
@@ -60,10 +63,12 @@
       }
       .user {
         .userImg {
-          margin-left: 86px;
         }
         @include media (md) {
           display: none;
+        }
+        @include media (sm) {
+          transform: translateY(4px);
         }
       }
     }
