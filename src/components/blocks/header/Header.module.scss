@@ -29,6 +29,12 @@
           @include media (sm) {
             width: 129px;
           }
+          @include media (lg) {
+            transform: translate(8px, 0);
+          }
+          @include media (xxl) {
+            transform: translate(0, 0);
+          }
         }
 
         .phoneMoscow {
@@ -46,6 +52,15 @@
           }
           @include media (sm) {
             transform: translate(0, 4px);
+          }
+          @include media (md) {
+            transform: translate(0, 1px);
+          }
+          @include media (lg) {
+            transform: translate(8px, 0);
+          }
+          @include media (xxl) {
+            transform: translate(0, 0);
           }
 
           span, .phoneLink {

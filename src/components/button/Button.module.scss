@@ -16,4 +16,10 @@
         width: 304px;
         transform: translateY(-17px);
     }
+    @include media(lg) {
+        transform: translate(11px, -14px);
+    }
+    @include media (xxl) {
+        transform: translate(0px, -17px);
+    }
 }

@@ -6,15 +6,21 @@
   background-size: cover;
   background-position: 62% center;
   color: $primaryColor;
-    @include media(sm) {
-        background-position: 56% center;
-        background-size: 233% auto;
-    }
-    @include media(md) {
-        background-position: 50% center;
-        background-size: 141% auto;
-    }
-
+  @include media(sm) {
+    background-position: 56% center;
+    background-size: 233%;
+  }
+  @include media(md) {
+    background-position: 50% center;
+    background-size: 141%;
+  }
+  @include media(lg) {
+    background-position: 48% center;
+    background-size: 136%;
+  }
+  @include media (xxl) {
+    background-size: 100%
+  }
 
   .container {
     @extend %container;
@@ -45,6 +51,12 @@
           max-width: 887px;
           width: 100%;
         }
+        @include media(lg) {
+          transform: translate(8px, 1px);
+        }
+        @include media (xxl) {
+          transform: translate(0, 0);
+        }
 
         span {
           color: $accentColor;
@@ -69,6 +81,12 @@
           background-size: cover;
           transform: translate(0px, -14px);
         }
+        @include media(lg) {
+          transform: translate(11px, -14px);
+        }
+        @include media (xxl) {
+          transform: translate(2px, -13px);
+        }
 
 
         .wrapper {
@@ -79,7 +97,6 @@
             @include text(18px, 400, 28px);
             @include media(sm) {
               @include text(20px, 400, 31px);
-
             }
           }
 
@@ -88,7 +105,6 @@
             transform: translate(1px, -8px);
             @include media(sm) {
               @include text(35px, 800, 52px);
-
             }
           }
         }
@@ -101,6 +117,7 @@
           @include media(sm) {
             transform: translate(-11px, 9px);
             max-height: 52px;
+            height: 52px;
           }
         }
       }
