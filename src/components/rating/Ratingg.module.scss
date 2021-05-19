@@ -1,0 +1,61 @@
+@import './../../../src/styles/sass/vars.scss';
+@import './../../../src/styles/sass/mixins';
+
+
+.ratingg {
+  display: flex;
+  margin-left: 15px;
+  transform: translate(0px, 6px);
+  border-top: 0.5px solid #C7C7C7;
+  border-bottom: 0.5px solid #C7C7C7;
+  padding: 14px 0 11px 0;
+  max-width: 290px;
+  @include media(xs) {
+    transform: translate(18px, -15px);
+    max-width: 506px;
+    padding: 14px 0 25px 0;
+  }
+  @include media(sm) {
+    transform: translate(33px, 24px);
+  }
+  @include media(md) {
+    transform: translate(53px, -234px);
+  }
+  @include media(lg) {
+    transform: translate(134px, -234px);
+  }
+  @include media(xxl) {
+    transform: translate(374px, -232px);
+  }
+
+
+  .wrapperTextRating {
+    @include text(14px, 500, 20px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    transform: translate(-1px, 4px);
+    @include media(xs) {
+      @include text(18px, 600, 26px);
+      flex-direction: row;
+      max-height: 24px;
+      transform: translate(-4px, 12px);
+    }
+    @include media(sm) {
+      @include text(18px, 600, 26px);
+    }
+
+    //.ratinggText {
+    //  @include text(14px, 500, 20px);
+    //}
+  }
+}
+
+.stars {
+  @include media(xs) {
+    transform: translate(8px, 1px);
+  }
+}
+
+
+

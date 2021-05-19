@@ -33,7 +33,7 @@
             transform: translate(8px, 0);
           }
           @include media (xxl) {
-            transform: translate(0, 0);
+            transform: translate(8px, -1px);
           }
         }
 
@@ -60,7 +60,7 @@
             transform: translate(8px, 0);
           }
           @include media (xxl) {
-            transform: translate(0, 0);
+            transform: translate(8px, 0px);
           }
 
           span, .phoneLink {

@@ -12,11 +12,11 @@ function Photosession() {
         <div className={s.photosession}>
             <div className={s.wrapper}>
                 <h2 className={s.title}>Фотосессия в вертолете</h2>
-                <video width="290px" height="197px" src={video} poster={previewPhotosessionVideo}> </video>
-                <p className={s.text}>Полет на вертолете это прекрасная возможность получить новые ощущения! А наш
-                    замечательный фотограф
-                    запечатлит лучшие моменты!</p>
+                <video className={s.photosessionVideo} src={video} poster={previewPhotosessionVideo}> </video>
             </div>
+            <p className={s.text}>Полет на вертолете это прекрасная возможность получить новые ощущения! А наш
+                замечательный фотограф
+                запечатлит лучшие моменты!</p>
             <div className={s.plan}>
                 <div className={s.planItem}>
                     <img className={s.planImgTime} src={time} alt="" /><span className={s.planTextTime}>3 часа съемки</span>

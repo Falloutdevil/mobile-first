@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media(md) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 
@@ -14,26 +18,85 @@
   margin-top: 39px;
   margin-bottom: 13px;
   max-width: 173px;
+  @include media(sm) {
+    @include text(40px, 500, 48px);
+    max-width: 262px;
+    transform: translate(3px, 10px);
+  }
+  @include media(md) {
+    transform: translate(-46px, -81px);
+  }
+  @include media(lg) {
+    transform: translate(-6px, -81px);
+  }
+  @include media(xxl) {
+    transform: translate(119px, -81px);
+  }
 }
 
 .text {
   @include text(14px, 400, 20px);
-  margin-top: 30px;
+  margin-top: 27px;
   max-width: 290px;
-  transform: translate(0px, -2px);
+  margin-left: 15px;
+  @include media(xs) {
+    @include text(18px, 400, 27px);
+    max-height: 73px;
+    max-width: 506px;
+    margin-left: 35px;
+    transform: translateY(-8px);
+  }
+  @include media(sm) {
+    transform: translate(14px, 31px);
+  }
+  @include media(md) {
+    transform: translate(35px, -226px);
+  }
+  @include media(lg) {
+    transform: translate(115px, -226px);
+  }
+  @include media(xxl) {
+    transform: translate(356px, -226px);
+  }
+}
+
+.photosessionVideo {
+  width: 290px;
+  height: 197px;
+  @include media(xs) {
+    width: 517px;
+    height: 343px;
+    transform: translate(0px, -3px);
+  }
+  @include media(sm) {
+    width: 668px;
+    height: 453px;
+    transform: translate(0px, 23px);
+  }
+  @include media(md) {
+    width: 554px;
+    height: 374px;
+    transform: translate(45px, 71px);
+  }
+  @include media(lg) {
+    transform: translate(4px, 68px)
+  }
+  @include media(xxl) {
+    transform: translate(-100px, 69px);
+  }
 }
 
 .plan {
-  display: flex;
-  flex-direction: column;
   margin-top: 29px;
+
+  .planItem {
+    display: flex;
+    align-items: center;
+    @include text(14px, 500, 20px);
+  }
+
 }
 
-.planItem {
-  display: flex;
-  align-items: center;
-  @include text(14px, 500, 20px);
-}
 
 .planImgTime {
   margin-left: 18px;
@@ -41,34 +104,165 @@
   margin-bottom: 33px;
   width: 32px;
   height: 40px;
-  transform: translate(-2px, -1px);
+  transform: translate(-2px, 2px);
+  @include media(xs) {
+    transform: translate(18px, -13px)
+  }
+  @include media(sm) {
+    transform: translate(33px, 23px);
+  }
+  @include media(md) {
+    transform: translate(53px, -233px);
+  }
+  @include media(lg) {
+    transform: translate(133px, -233px)
+  }
+  @include media(xxl) {
+    transform: translate(374px, -233px)
+  }
 }
 
 .planTextTime {
-  transform: translate(-4px, -18px);
+  transform: translate(-4px, -15px);
+  @include media(xs) {
+    transform: translate(16px, -30px);
+  }
+  @include media(sm) {
+    transform: translate(31px, 5px);
+  }
+  @include media(md) {
+    transform: translate(50px, -251px);
+  }
+  @include media(lg) {
+    transform: translate(130px, -251px);
+  }
+  @include media(xxl) {
+    transform: translate(371px, -251px);
+  }
 }
 
 .planImgCamera {
   margin-left: 19px;
   margin-right: 8px;
   margin-bottom: 26px;
+  transform: translate(-4px, -16px);
+  @include media(xs) {
+    transform: translate(16px, -30px);
+  }
+  @include media(sm) {
+    transform: translate(31px, 5px);
+  }
+  @include media(md) {
+    transform: translate(50px, -251px);
+  }
+  @include media(lg) {
+    transform: translate(132px, -251px);
+  }
+  @include media(xxl) {
+    transform: translate(371px, -251px);
+  }
 }
 
 .planTextCamera {
-  transform: translate(-4px, -28px);
+  transform: translate(-4px, -25px);
+  @include media(xs) {
+    transform: translate(16px, -40px);
+  }
+  @include media(sm) {
+    transform: translate(31px, -5px);
+  }
+  @include media(md) {
+    transform: translate(50px, -260px);
+  }
+  @include media(lg) {
+    transform: translate(131px, -261px);
+  }
+  @include media(xxl) {
+    transform: translate(372px, -261px);
+  }
 }
 
 .planImgPointMap {
   margin-left: 20px;
   margin-right: 10px;
   margin-bottom: 25px;
-  width: 17px;
-  height: 25px;
+  width: 33px;
+  height: 33px;
+  transform: translate(-4px, -25px);
+  @include media(xs) {
+    transform: translate(16px, -40px);
+  }
+  @include media(sm) {
+    transform: translate(30px, -4px);
+  }
+  @include media(md) {
+    transform: translate(50px, -260px);
+  }
+  @include media(lg) {
+    transform: translate(130px, -261px);
+  }
+  @include media(xxl) {
+    transform: translate(372px, -261px);
+  }
+}
+
+.planTextPointMap {
+  transform: translate(-5px, -35px);
+  @include media(xs) {
+    transform: translate(15px, -50px);
+  }
+  @include media(sm) {
+    transform: translate(30px, -14px);
+  }
+  @include media(md) {
+    transform: translate(50px, -271px);
+  }
+  @include media(lg) {
+    transform: translate(130px, -271px);
+  }
+  @include media(xxl) {
+    transform: translate(371px, -270px);
+  }
 }
 
 .planImgChat {
   margin-left: 19px;
   margin-right: 12px;
   width: 31px;
-  height: 27px;
+  height: 31px;
+  transform: translate(-4px, -39px);
+  @include media(xs) {
+    transform: translate(16px, -49px);
+  }
+  @include media(sm) {
+    transform: translate(30px, -14px);
+  }
+  @include media(md) {
+    transform: translate(50px, -271px);
+  }
+  @include media(lg) {
+    transform: translate(131px, -270px);
+  }
+  @include media(xxl) {
+    transform: translate(371px, -270px);
+  }
+}
+
+.planTextChat {
+  transform: translate(-4px, -29px);
+  @include media(xs) {
+    transform: translate(16px, -50px);
+  }
+  @include media(sm) {
+    transform: translate(30px, -14px);
+  }
+  @include media(md) {
+    transform: translate(50px, -271px);
+  }
+  @include media(lg) {
+    transform: translate(130px, -271px);
+  }
+  @include media(xxl) {
+    transform: translate(371px, -270px);
+  }
 }
