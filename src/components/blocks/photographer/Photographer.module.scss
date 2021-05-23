@@ -16,19 +16,27 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  left: 129px;
+  bottom: 7px;
 }
 
 .avatarImg {
   width: 139px;
   height: 139px;
+  transform: translate(-7px, -21px);
 }
 
 .photographerName {
   @include text(18px, 500, 22px);
+  margin-top: 2px;
+  margin-right: 14px;
 }
 
 .photographerProfession {
   @include text(14px, 400, 21px);
+  margin-top: 6px;
+  margin-right: 12px;
 }
 
 .photographerInfo {
@@ -38,17 +46,47 @@
   width: 225px;
   height: 37px;
   text-align: center;
+  margin-top: 8px;
+  margin-right: 14px;
 }
 
 .photographerSubTitle {
   @include text(18px, 500, 26px);
+  margin-top: 25px;
+  margin-bottom: 11px;
+  margin-right: 122px;
+}
+
+.photographerSubTitleTwo {
+  @include text(18px, 500, 26px);
+  transform: translate(-53px, 2px);
+  margin-bottom: 14px;
 }
 
 .photographerText {
   @include text(16px, 400, 24px);
-  width: 290px;
+  margin: 0 15px 0 15px;
 }
 
 .photographerTextTwo {
-  margin-top: 30px;
+  padding-top: 27px;
+  @include text(16px, 400, 24px);
+
+}
+
+.photographerTextThree {
+  @include text(16px, 500, 24px);
+  margin: 0 15px 0 15px;
+}
+
+.photographerLinkOne {
+  margin-top: 41px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.photographerLinkTwo {
+  margin-top: 41px;
+  margin-bottom: 40px;
+  display: block;
 }
