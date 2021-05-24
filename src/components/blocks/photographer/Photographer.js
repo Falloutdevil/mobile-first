@@ -5,13 +5,15 @@ import avatarPhotographer from './../../../assets/img/photographer/avatarPhotogr
 
 function Photographer() {
     return (
-        <div>
-            <div className={s.photographerDataInner}>
+        <div className={s.photographerDataInner}>
+            <div className={s.photographerData}>
                 <button className={s.buttonLike}><img src={likeImg} alt="" /></button>
                 <img className={s.avatarImg} src={avatarPhotographer} alt="" />
                 <span className={s.photographerName}>Марина Иванова</span>
                 <span className={s.photographerProfession}>Фотограф</span>
                 <a className={s.photographerInfo} href="#">Показать больше информации о фотографе</a>
+            </div>
+            <div className={s.photographerTextInner}>
                 <span className={s.photographerSubTitle}>Об организаторе:</span>
                 <p className={s.photographerText}>Всем привет! Я фотограф Мария! И по мимо
                     фотосъемки я так же являюсь
@@ -35,9 +37,9 @@ function Photographer() {
                     и локации для вашей съемки.
                     При необходимости всегда возможно прерваться
                     на обед/ужин.
-                    <p>Более 50 фотографий на выходе
-                        с обработкой и замечательные впечатления о Дубае!</p>
-                    <a className={s.photographerLinkTwo} href="#">Читать еще</a>
+                <p>Более 50 фотографий на выходе
+                    с обработкой и замечательные впечатления о Дубае!</p>
+                <a className={s.photographerLinkTwo} href="#">Читать еще</a>
                 </p>
             </div>
         </div>

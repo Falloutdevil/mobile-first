@@ -3,11 +3,17 @@
 
 
 .photographerDataInner {
+  margin-top: 60px;
+}
+
+.photographerData {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  @include media(md) {
+    transform: translate(310px, -230px);
+  }
 }
 
 .buttonLike {
@@ -19,24 +25,47 @@
   position: relative;
   left: 129px;
   bottom: 7px;
+  @include media(sm) {
+    bottom: 0;
+    left: 132px;
+  }
 }
 
 .avatarImg {
   width: 139px;
   height: 139px;
   transform: translate(-7px, -21px);
+  @include media(xs) {
+    transform: translate(-2px, -21px);
+    margin: 0;
+  }
+  @include media(sm) {
+    transform: translate(0px, -13px);
+  }
 }
 
 .photographerName {
   @include text(18px, 500, 22px);
   margin-top: 2px;
   margin-right: 14px;
+  @include media(xs) {
+    transform: translate(5px, 0px);
+  }
+  @include media(sm) {
+    transform: translate(7px, 7px);
+  }
 }
 
 .photographerProfession {
   @include text(14px, 400, 21px);
   margin-top: 6px;
   margin-right: 12px;
+  @include media(xs) {
+    transform: translate(5px, 0px);
+  }
+  @include media(sm) {
+    transform: translate(7px, 7px);
+  }
 }
 
 .photographerInfo {
@@ -46,47 +75,114 @@
   width: 225px;
   height: 37px;
   text-align: center;
-  margin-top: 8px;
-  margin-right: 14px;
+  margin: 8px 14px 25px 0;
+  @include media(xs) {
+    transform: translate(5px, 0px);
+  }
+  @include media(sm) {
+    transform: translate(7px, 7px);
+  }
+}
+
+.photographerTextInner {
+  margin: 0 15px 0 15px;
+  @include media(xs) {
+    margin: 0 35px 0 35px;
+  }
 }
 
 .photographerSubTitle {
   @include text(18px, 500, 26px);
-  margin-top: 25px;
-  margin-bottom: 11px;
-  margin-right: 122px;
+  @include media(xs) {
+    transform: translate(0px, 5px);
+    display: inline-block;
+  }
+  @include media(sm) {
+    transform: translate(-188px, 17px);
+  }
 }
 
 .photographerSubTitleTwo {
   @include text(18px, 500, 26px);
   transform: translate(-53px, 2px);
   margin-bottom: 14px;
+  @include media(xs) {
+    transform: translate(0, 38px);
+    display: inline-block;
+  }
+  @include media(sm) {
+    transform: translate(-240px, -8px);
+  }
 }
 
 .photographerText {
   @include text(16px, 400, 24px);
-  margin: 0 15px 0 15px;
+  margin-top: 12px;
+  @include media(xs) {
+    transform: translate(0px, 5px);
+  }
+  @include media(sm) {
+    transform: translate(-41px, 18px);
+  }
 }
 
 .photographerTextTwo {
   padding-top: 27px;
   @include text(16px, 400, 24px);
-
+  @include media(xs) {
+    transform: translate(0px, -2px);
+  }
+  @include media(sm) {
+    transform: translate(1px, -1px);
+  }
 }
 
 .photographerTextThree {
-  @include text(16px, 500, 24px);
-  margin: 0 15px 0 15px;
+  @include text(16px, 400, 24px);
+  transform: translate(0px, 12px);
+  @include media(xs) {
+    transform: translate(0px, 37px);
+  }
 }
 
 .photographerLinkOne {
   margin-top: 41px;
   margin-bottom: 24px;
   display: block;
+  text-decoration: none;
+  @include media(xs) {
+    transform: translate(0px, 22px);
+  }
+  @include media(sm) {
+    transform: translate(1px, -37px);
+  }
 }
 
 .photographerLinkTwo {
-  margin-top: 41px;
+  margin-top: 44px;
   margin-bottom: 40px;
   display: block;
+  text-decoration: none;
+  @include media(xs) {
+    transform: translate(1px, -28px);
+  }
+  @include media(sm) {
+    transform: translate(1px, -34px);
+  }
 }
+
+.photographerLinkTwo::after {
+  @include media(xs) {
+    content: "";
+    width: 506px;
+    height: 0;
+    border-bottom: 0.5px solid #C7C7C7;
+    padding-bottom: 50px;
+    display: block
+  }
+  @include media(sm) {
+    width: 667px;
+  }
+}
+
+
