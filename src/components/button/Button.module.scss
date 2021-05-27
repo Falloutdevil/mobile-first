@@ -17,9 +17,9 @@
         transform: translateY(-17px);
     }
     @include media(lg) {
-        transform: translate(11px, -14px);
+        transform: translate(0px, -19px);
     }
     @include media (xxl) {
-        transform: translate(8px, -17px);
+        transform: translate(0px, -17px);
     }
 }

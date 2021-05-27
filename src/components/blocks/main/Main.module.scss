@@ -4,7 +4,7 @@
 .main {
   background-image: url("./../../../assets/img/main-bg.jpg");
   background-size: cover;
-  background-position: 62% center;
+  background-position: 61% center;
   color: $primaryColor;
   @include media(sm) {
     background-position: 56% center;
@@ -15,7 +15,7 @@
     background-size: 141%;
   }
   @include media(lg) {
-    background-position: 48% center;
+    background-position: 50% center;
     background-size: 136%;
   }
   @include media (xxl) {
@@ -52,10 +52,10 @@
           width: 100%;
         }
         @include media(lg) {
-          transform: translate(8px, 1px);
+          transform: translate(0px, -2px);
         }
         @include media (xxl) {
-          transform: translate(8px, 0px);
+          transform: translate(0px, 0px);
         }
 
         span {
@@ -82,10 +82,10 @@
           transform: translate(0px, -14px);
         }
         @include media(lg) {
-          transform: translate(11px, -14px);
+          transform: translate(1px, -16px);
         }
         @include media (xxl) {
-          transform: translate(11px, -13px);
+          transform: translate(2px, -13px);
         }
 
 

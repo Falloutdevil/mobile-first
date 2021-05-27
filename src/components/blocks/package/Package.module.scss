@@ -20,7 +20,7 @@
     width: 315px;
   }
   @include media(lg) {
-    transform: translate(-466px, -254px);
+    transform: translate(-457px, -254px);
     @include text(20px, 500, 30px);
     width: 220px;
   }
@@ -47,14 +47,14 @@
     //margin-left: -11px;
   }
   @include media(md) {
-    transform: translate(48px, -211px);
+    transform: translate(34px, -211px);
     flex-direction: row;
     max-width: 1180px;
     column-gap: 10px;
     height: 385px;
   }
   @include media(lg) {
-    transform: translate(131px, -253px);
+    transform: translate(115px, -253px);
     max-width: 1166px;
   }
   @include media(xxl) {
@@ -75,21 +75,21 @@
 .packageImgFoto {
   display: none;
   @include media(sm) {
-    //border-bottom: 0.5px solid #C7C7C7;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px auto auto auto;
     padding-bottom: 27px;
     transform: translate(-1px, 21px);
     @include text(17px, 500, 25px);
     color: #5286EC;
+    max-width: 166px;
   }
   @include media(md) {
-    transform: translate(-6px, -220px);
+    transform: translate(-6px, -224px);
   }
   @include media(lg) {
-    transform: translate(-6px, -263px);
+    transform: translate(2px, -263px);
   }
   @include media(xxl) {
     transform: translate(2px, -262px);

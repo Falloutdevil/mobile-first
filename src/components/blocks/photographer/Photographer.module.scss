@@ -12,7 +12,12 @@
   justify-content: center;
   align-items: center;
   @include media(md) {
-    transform: translate(310px, -230px);
+    margin-top: -230px;
+    margin-left: 621px;
+  }
+  @include media(lg) {
+    margin-top: -272px;
+    margin-left: 638px;
   }
 }
 
@@ -89,6 +94,16 @@
   @include media(xs) {
     margin: 0 35px 0 35px;
   }
+  @include media(sm) {
+    margin: 0 133px 0 51px;
+  }
+  @include media(md) {
+    max-width: 584px;
+    transform: translate(20px, -324px);
+  }
+  @include media(lg) {
+    transform: translate(100px, -324px);
+  }
 }
 
 .photographerSubTitle {
@@ -99,6 +114,9 @@
   }
   @include media(sm) {
     transform: translate(-188px, 17px);
+  }
+  @include media(sm) {
+    transform: translate(0px, 17px);
   }
 }
 
@@ -113,6 +131,9 @@
   @include media(sm) {
     transform: translate(-240px, -8px);
   }
+  @include media(sm) {
+    transform: translate(0px, -9px);
+  }
 }
 
 .photographerText {
@@ -123,6 +144,9 @@
   }
   @include media(sm) {
     transform: translate(-41px, 18px);
+  }
+  @include media(sm) {
+    transform: translate(0px, 17px);
   }
 }
 
@@ -142,6 +166,9 @@
   transform: translate(0px, 12px);
   @include media(xs) {
     transform: translate(0px, 37px);
+  }
+  @include media(sm) {
+    transform: translate(0px, -12px);
   }
 }
 
@@ -182,6 +209,9 @@
   }
   @include media(sm) {
     width: 667px;
+  }
+  @include media(md) {
+    width: 1139px;
   }
 }
 

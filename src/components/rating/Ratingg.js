@@ -7,9 +7,9 @@ function Ratingg() {
 
     return (
         <div className={s.ratingg}>
-            <img src={imgCup} alt="" />
+            <img className={s.imgCup} src={imgCup} alt="" />
             <div className={s.wrapperTextRating}>
-                <span>Более 50 отзывов с оценкой</span>
+                <span className={s.ratinggText}>Более 50 отзывов с оценкой</span>
                 <Rating name="half-rating" defaultValue={2.5} precision={0.5} className={s.stars} />
             </div>
         </div>

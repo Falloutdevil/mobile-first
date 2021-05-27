@@ -24,7 +24,7 @@ function Package() {
                 <img className={s.packageImg} src={kiss2} alt="" />
                 <img className={s.packageImg} src={kiss3} alt="" />
             </div>
-            <span className={s.packageImgFoto}>Показать все фото</span>
+                <span className={s.packageImgFoto}>Показать все фото</span>
         </div>
 
     );
